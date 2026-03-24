@@ -11,34 +11,47 @@ color: #640f00; }
 p {font-family: Bauer Bodoni Roman;
 color: #000000; }
 
-body
+
+body 
 { background: #FDEFE6;
 
 font-family: Bauer Bodoni; 
 color: #000000 ;
 letter-spacing: 0; 
 font-weight: normal; 
-font-size: medium; 
+font-size: medium;
+}
 
+#margins {
+margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
 
-(Warning: the following scrollbar attribute is for those who use IE only!)
-
-scrollbar-face-color : #000000;
-scrollbar-highlight-color : #000000;
-scrollbar-3dlight-color : #000000;
-scrollbar-shadow-color : #000000;
-scrollbar-darkshadow-color : #000000;
-scrollbar-track-color : #000000;
-scrollbar-arrow-color : #000000;
-
-margin-top: 5;
-margin-bottom: 5;
-margin-left: 5;
-margin-right: 5;
-padding-top: 2;
-padding-bottom: 2;
-padding-left: 2;
-padding-right: 2;
+#header {
+  margin: 20px;
+  padding: 10px;
+  height: 100px;
+}
+#left {
+  position: absolute;
+  left: 15px;
+  top: 160px;
+  width: 200px;
+}
+#center {
+  top: 0;
+  margin-left: 230px;
+  margin-right: 230px;
+}
+#right {
+  position: absolute;
+  right: 15px;
+  top: 160px;
+  width: 200px;
 }
 
 td
