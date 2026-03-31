@@ -1,3 +1,4 @@
+<html>
 <head>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
   <title>Projects</title>
@@ -5,11 +6,19 @@
 </head>
 
 <body>
-  <h1><center>Bot</center></h1>
+<div>
+  <h1><center>BOT</center></h1>
   <p id = "instructions"> Please enter text and receive a response from bot </p>
-  <div id = "chatwindow" style="width:400px;height: 400px; background-color: white"><p></div>
+  <div id = "chatwindow" style="width:400px;height: 400px; background-color: white">BOT: Hello<p></div>
   <br>
   <input id = "userinput" style = "width: 400px;background-color: white></input>
   <button onclick=clicked()> Submit </button><p>
 
+</div>
+function clicked () [
+    result = document.getElementById("instructions")
+    result.innerHTML = result.innerHTML + "I would like to ask you a question <p>"
+
+    
 </body>
+</html>
