@@ -2,7 +2,68 @@
 <head>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
   <title>Projects</title>
- 
+ <!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}
+</style>
+</head>
+<body>
+<div>
+<h1>MAGIC 8 BALL</h1>
+<p id = "instructions">Ask your questions, answers may follow</p>
+<div id="chatwindow" style = "width:400px;height:400px;background-color:white">8 BALL: Ask and I shall prophesize <p></div>
+<br>
+<input id="userinput" style="width:400px;background-color:white"></input>
+<button onclick = clicked()>Submit</button><p>
+</div>
+<script>
+
+function clicked() {
+	var result = document.getElementById("chatwindow")
+	var prompt = "User:" + document.getElementById("userinput").value + "<p>"
+	result.innerHTML = result.innerHTML + prompt 
+	var text = document.getElementById("userinput").value
+	var eliza_response = followups(text)
+	result.innerHTML = result.innerHTML + eliza_response + "<p>"
+	document.getElementById("userinput").value = ""
+}
+
+function followups(usertext){
+
+	usertext = usertext.toLowerCase()
+	if (/^(will)\b/.test(usertext)) {
+		response = "Signs point to yes";
+		}
+	else if (/^(who)\b/.test(usertext)) {
+		response = "Ask again later";
+		}
+	else if (/^(what)\b/.test(usertext)) {
+		response = "Outlook good";
+		}
+	else if (/^(should)\b/.test(usertext)) {
+		response = "My sources say no";
+		}
+	else if (/^(is)\b/.test(usertext)) {
+		response = "My sources say no";
+		}
+	else {
+		response = "Concentrate and ask again"
+}
+return response
+
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
 </head>
 
 <body>
